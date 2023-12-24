@@ -1,0 +1,172 @@
+/*ANCHOR - GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*ANCHOR - Variablen */
+
+body {
+  --color-black: #191919;
+  --color-grey: #707070;
+  --color-blue: #11a3c7;
+  --color-darkgrey: #545454;
+  --color-darkgrey-2: #636363;
+  --color-yellow: #d47800;
+  --color-red: #c91e49;
+  --color-green: #008000;
+
+  --font: "IBM", monospace;
+  --font-scale: 0.4vw;
+  --line: 3ch;
+}
+
+/*ANCHOR - Body */
+
+body {
+  font-family: var(--font);
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(1rem + var(--font-scale));
+  line-height: var(--line);
+  background-color: #191919;
+  color: #707070;
+}
+
+/*ANCHOR - Header */
+
+header {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #11a3c7;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: calc(0.9rem + var(--font-scale));
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ANCHOR - Main */
+
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+main a {
+  font-size: calc(0.8rem + var(--font-scale));
+}
+
+h1 {
+  font-weight: 300;
+  font-size: calc(1.6rem + var(--font-scale));
+  line-height: 3ch;
+  color: #008000;
+}
+
+h2 {
+  margin-top: 30px;
+  font-weight: 200;
+  font-size: calc(1.2rem + var(--font-scale));
+  line-height: 3ch;
+  font-style: italic;
+  color: #d47800;
+}
+
+p {
+  color: #636363;
+  padding-bottom: 24px;
+}
+
+time {
+  color: #545454;
+  font-size: calc(0.6rem + var(--font-scale));
+}
+
+#finden {
+  height: 220px;
+  border: solid 2px #707070;
+  border-radius: 50%;
+}
+
+#sadsang {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: solid 2px #707070;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 24px;
+}
+
+.artikel {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.artikel a {
+  font-weight: 200;
+  font-size: calc(1rem + var(--font-scale));
+  font-style: italic;
+  line-height: 2ch;
+  color: #d47800;
+}
+
+.artikel a:hover {
+  color: #191919;
+  background-color: #d47800;
+}
+
+.foto-container {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+}
+
+.foto-container img {
+  object-fit: cover;
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+}
+
+.foto-container img:hover {
+  border: 1px solid #008000;
+}
+
+/*ANCHOR - Footer */
+
+footer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #545454;
+}
+
+footer ul {
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+footer > ul > li {
+  font-size: calc(0.9rem + var(--font-scale));
+}
